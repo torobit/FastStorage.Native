@@ -22,13 +22,6 @@ Features
 🖥 Runs everywhere – Windows, Linux, macOS; x64 & ARM (win‑x64, linux‑arm64, osx‑arm64, …).
 
 
-MessageHeader
-
-Offset Size Field           Type            Description
-0      2    Kind            short           See enum `MessageKind`
-2      2    Size            ushort          Total bytes of this message struct
-4      8    Time            long            Unix epoch millis (UTC)
-
 Benchmark
 
 Measured on an Apple M2 Pro (10‑core), macOS 14.4, .NET 8.0 AOT build (osx‑arm64).  Input file: combined depth + trade stream for ETH‑USDT (≈640 MB, Feb  9 2025).
