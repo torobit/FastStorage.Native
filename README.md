@@ -1,7 +1,7 @@
 FastStorage.Native
 
 High‑performance, cross‑platform native reader for the proprietary FastCache market‑data format.  The library is written in C# 11 / .NET 8, 
-ahead‑of‑time (AOT) compiled into a small native shared library that can be loaded from Python, Rust, C++, or any other language that can call a C ABI.
+ahead‑of‑time (AOT) compiled into a small native shared library that can be loaded from Python or any other language that can call a C ABI.
 
 Why? We had terabytes of historical Binance, Bybit, Okex, Hyperliquid, Dydx V4 (and more) order‑book snapshots and trade ticks compressed with K4os/LZ4‑Pickler.  
 Reading them back from Python was painfully slow.  FastStorage.Native gives you zero‑allocation reads at ~540 k msg/s on Apple M‑series and lets you keep all the heavy lifting in one place.
